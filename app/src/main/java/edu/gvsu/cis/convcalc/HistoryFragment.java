@@ -31,7 +31,7 @@ public class HistoryFragment extends Fragment {
     // TODO: Customize parameters
     private int mColumnCount = 1;
     private OnListFragmentInteractionListener mListener;
-    List<HistoryItem> allHistory;
+    private List<HistoryItem> allHistory;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the

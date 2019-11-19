@@ -23,23 +23,15 @@ public class HistoryContent {
         ITEMS.add(item);
     }
 
-//    static {
-//        DateTime now = DateTime.now();
-//        addItem(new HistoryItem(2.0, 1.829, "Length", "Yards", "Meters", now.minusDays(1)));
-//        addItem(new HistoryItem(1.0, 3.785, "Volume", "Gallons", "Liters", now.minusDays(1)));
-//        addItem(new HistoryItem(2.0, 1.829, "Length", "Yards", "Meters", now.plusDays(1)));
-//        addItem(new HistoryItem(1.0, 3.785, "Volume", "Gallons", "Liters", now.plusDays(1)));
-//    }
-
     public static class HistoryItem {
-        public final Double fromVal;
-        public final Double toVal;
-        public final String mode;
-        public final String fromUnits;
-        public final String toUnits;
+        public Double fromVal;
+        public Double toVal;
+        public String mode;
+        public String fromUnits;
+        public String toUnits;
         public String _key;
 
-        public final String timestamp;
+        public String timestamp;
 
         public HistoryItem(Double fromVal, Double toVal, String mode,
                            String fromUnits, String toUnits, String timestamp) {
@@ -49,6 +41,10 @@ public class HistoryContent {
             this.fromUnits = fromUnits;
             this.toUnits = toUnits;
             this.timestamp = timestamp;
+        }
+
+        public HistoryItem(){
+            
         }
 
         @Override
